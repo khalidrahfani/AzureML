@@ -18,17 +18,14 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - name: Set up Python version
-        uses: actions/setup-python@v1
-        with:
-          python-version: '3.9'
+
 
       - name: Create and start virtual environment
         run: |
           python -m venv venv
           source venv/bin/activate
-          
-              name: project_environment
+
+- name: project_environment
 dependencies:
   # The python interpreter version.
   # Currently Azure ML only supports 3.8 and later.
@@ -49,9 +46,6 @@ dependencies:
 channels:
 - anaconda
 - conda-forge
-      
-      - name: Install dependencies
-        run: pip install -r requirements.txt
         
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
