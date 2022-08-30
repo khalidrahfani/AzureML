@@ -15,8 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      uses: actions/checkout@v2
       
       name: Create and start virtual environment
          - python=3.7.9
