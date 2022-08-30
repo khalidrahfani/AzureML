@@ -16,14 +16,11 @@ jobs:
 
     steps:
 
-      - uses: actions/checkout@v2
+      uses: actions/checkout@v2
       
-      - name: Create and start virtual environment
-        run: |
-          source venv/bin/activate
-         # The python interpreter version.
-      - python=3.7.9
-      - pip:
+      name: Create and start virtual environment
+         - python=3.7.9
+         - pip:
            - azureml-train-automl-runtime==1.44.0
            - inference-schema
            - azureml-interpret==1.44.0
