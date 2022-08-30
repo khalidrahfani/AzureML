@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    -steps:
+    steps:
       -name: Create and start virtual environment
       dependencies:
 
