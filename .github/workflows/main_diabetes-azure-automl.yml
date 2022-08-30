@@ -28,7 +28,7 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-      - pip:
+        pip:
         - azureml-train-automl-runtime-1.44.0
         - inference-schema
         - azureml-interpret-1.44.0
