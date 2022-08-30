@@ -13,13 +13,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      
-      name: Create and start virtual environment
+      -name: Create and start virtual environment
          - python=3.7.9
                                                                     
-      pip :
+      -pip:
            - azureml-train-automl-runtime==1.44.0
            - inference-schema
            - azureml-interpret==1.44.0
@@ -31,7 +29,7 @@ jobs:
            - fbprophet==0.7.1
            - holidays==0.10.3
            - psutil==5.8.0
-      channels:
+      -channels:
         - anaconda
         - conda-forge
         
