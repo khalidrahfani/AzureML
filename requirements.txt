@@ -24,4 +24,4 @@ holidays==0.10.3
 psutil==5.8.0
 #channels:
 #- anaconda
-#- conda-forge
+- conda-forge
