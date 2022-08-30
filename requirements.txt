@@ -12,7 +12,7 @@ python==3.9.7
 
 
 azureml-train-automl-runtime==1.44.0
-inference-schema
+#inference-schema
 azureml-interpret==1.44.0
 azureml-defaults==1.44.0
 numpy==1.18.5
