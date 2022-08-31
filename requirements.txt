@@ -20,7 +20,6 @@ pandas==1.1.5
 scikit-learn==0.22.1
 xgboost
 conda install -c conda-forge prophet
-
 holidays==0.10.3
 psutil==5.8.0
 #channels:
