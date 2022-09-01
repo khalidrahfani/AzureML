@@ -22,16 +22,18 @@ jobs:
         with:
           python-version: '3.8.13'
 
+
       - name: Create and start virtual environment
         run: |
           python -m venv venv
           source venv/bin/activate
+        
       
       - name: Install dependencies
-        run: pip install -r requirements.txt
-        channels:
-        - anaconda
-        - conda-forge
+        run: |
+         pip install -r requirements.txt
+         conda env create -f conda_env_v_1_0_0.yml
+
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
